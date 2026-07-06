@@ -108,7 +108,6 @@ related_candidates:
 업로드한 문서를 Second Brain 지식 에이전트에 넣을 Markdown으로 변환해줘.
 반드시 https://github.com/MyGumii/llm-wiki 의 LMNOTEBOOK_PROMPT.md 형식을 따르고, 근거 없는 내용은 만들지 말고,
 그래프 연결에 도움이 되도록 topics, entities, aliases, core_knowledge, detailed_knowledge, link_hints를 채워줘.
-문서에 source code, config, script, command, log, code snippet이 있으면 Source Code And Snippets 섹션도 채워줘.
 내부 프로젝트명, 시스템명, 문서명, 약어는 원문 표기로 보존해줘.
 출력은 Markdown 코드블록 하나만 줘.
 ```

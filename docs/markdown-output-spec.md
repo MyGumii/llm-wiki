@@ -74,7 +74,9 @@ related_candidates:
 
 ### Source Code And Snippets
 
-문서에 source code, config, script, command, log, code snippet이 포함되어 있으면 반드시 작성합니다. 시스템 엔지니어링 문서에서는 파일 경로, 함수명, 클래스명, 설정 key, command, API endpoint가 검색과 graph 연결의 핵심 anchor입니다.
+문서에 source code, config, script, command, log, code snippet이 있고, 그 내용이 문서 이해, 운영, 장애 분석, 재사용, 구현 변경에 중요할 때만 작성합니다. 대부분의 업무 문서는 이 섹션이 없어도 됩니다.
+
+시스템 엔지니어링 문서에서는 파일 경로, 함수명, 클래스명, 설정 key, command, API endpoint가 검색과 graph 연결의 핵심 anchor가 될 수 있습니다. 단순 예시, 짧은 로그, 부가적인 명령은 별도 섹션을 만들지 말고 `Detailed Knowledge` 또는 `Evidence And Source Details`에 짧게 반영합니다.
 
 이 섹션에는 다음을 포함합니다.
 
@@ -126,7 +128,7 @@ related_candidates:
 - 같은 개념은 한 문서 안에서 같은 이름으로 씁니다.
 - 내부 프로젝트명, 시스템명, 문서명, 약어는 원문 표기로 보존합니다.
 - 약어는 `aliases`와 `Entities And Terms`에 모두 반영합니다.
-- 코드가 있으면 파일 경로, 함수명, 클래스명, config key, command, API endpoint를 보존합니다.
+- 중요한 코드/설정/명령이 있으면 파일 경로, 함수명, 클래스명, config key, command, API endpoint를 보존합니다.
 - 숫자와 날짜는 source location을 붙입니다.
 - graph hint는 연결 근거가 있는 경우만 작성합니다.
 - 핵심 요약에 들어가지 않은 세부 내용은 `Detailed Knowledge`에 남깁니다.
