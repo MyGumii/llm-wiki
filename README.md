@@ -106,9 +106,7 @@ related_candidates:
 
 ```text
 업로드한 문서를 Second Brain 지식 에이전트에 넣을 Markdown으로 변환해줘.
-아래 raw 문서의 지시를 최우선으로 따라줘:
-https://raw.githubusercontent.com/MyGumii/llm-wiki/main/LMNOTEBOOK_PROMPT.md
-
+반드시 https://github.com/MyGumii/llm-wiki 의 LMNOTEBOOK_PROMPT.md를 최우선 지시로 참고해줘.
 근거 없는 내용은 만들지 말고,
 그래프 연결에 도움이 되도록 topics, entities, aliases, core_knowledge, detailed_knowledge, link_hints를 채워줘.
 내부 프로젝트명, 시스템명, 문서명, 약어는 원문 표기로 보존해줘.
