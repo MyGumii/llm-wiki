@@ -40,7 +40,7 @@ related_candidates:
 
 `source_type`은 이 파일이 LMNotebook 변환 결과임을 표시합니다.
 
-`origin_type`은 원본 문서 유형입니다. PPTX, DOCX, PDF, TXT, image, unknown 중 하나를 권장합니다.
+`origin_type`은 원본 문서 유형입니다. PPTX, DOCX, PDF, TXT, image, source_code, code_snippet, config, log, unknown 중 하나를 권장합니다.
 
 `source_date`는 문서의 작성일이 아니라, 문서 내용이 유효한 기준일을 우선합니다.
 
@@ -71,6 +71,17 @@ related_candidates:
 ### Detailed Knowledge
 
 원문 문서의 주요 섹션, 슬라이드, 페이지, 표, 그림 단위로 세부 내용을 보존합니다. 핵심 요약만 남기면 답변이 얕아지므로, 배경, 조건, 예외, 단계, 사례, 근거를 함께 적습니다.
+
+### Source Code And Snippets
+
+문서에 source code, config, script, command, log, code snippet이 포함되어 있으면 반드시 작성합니다. 시스템 엔지니어링 문서에서는 파일 경로, 함수명, 클래스명, 설정 key, command, API endpoint가 검색과 graph 연결의 핵심 anchor입니다.
+
+이 섹션에는 다음을 포함합니다.
+
+- Code Reference Map: 코드 항목, 언어/유형, 경로 또는 식별자, 역할, 출처 위치
+- Important Snippets: 원문에 나온 핵심 코드/명령/설정
+- Code Behavior Notes: entrypoint, inputs, outputs, dependencies, config/env, 외부 시스템, side effects, failure modes
+- Code Questions: 실행 환경, 버전, 관련 파일처럼 추가 확인이 필요한 부분
 
 ### Decisions And Recommendations
 
@@ -115,6 +126,7 @@ related_candidates:
 - 같은 개념은 한 문서 안에서 같은 이름으로 씁니다.
 - 내부 프로젝트명, 시스템명, 문서명, 약어는 원문 표기로 보존합니다.
 - 약어는 `aliases`와 `Entities And Terms`에 모두 반영합니다.
+- 코드가 있으면 파일 경로, 함수명, 클래스명, config key, command, API endpoint를 보존합니다.
 - 숫자와 날짜는 source location을 붙입니다.
 - graph hint는 연결 근거가 있는 경우만 작성합니다.
 - 핵심 요약에 들어가지 않은 세부 내용은 `Detailed Knowledge`에 남깁니다.

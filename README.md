@@ -13,6 +13,7 @@
 - 문서가 무엇인지: 제목, 원본 유형, 작성/기준 시점, 업무 도메인
 - 핵심 내용이 무엇인지: 주요 주장, 결정 사항, 절차, 제약 조건
 - 상세 내용이 무엇인지: 문서의 섹션별 세부 내용, 배경, 예외, 조건, 사례
+- 코드가 있다면 무엇을 하는지: 파일 경로, 언어, entrypoint, 함수/클래스, 입출력, 의존성, 설정값, 실행상 주의점
 - 무엇과 연결되는지: 관련 시스템, 용어, 프로젝트, 선행/후행 문서 후보
 - 얼마나 믿을 수 있는지: 출처 위치, 불확실한 부분, 누락된 표/그림/수치
 - 그래프 연결 힌트: `supports`, `requires`, `supersedes`, `contradicts`, `references`, `related`
@@ -107,6 +108,7 @@ related_candidates:
 업로드한 문서를 Second Brain 지식 에이전트에 넣을 Markdown으로 변환해줘.
 반드시 https://github.com/MyGumii/llm-wiki 의 LMNOTEBOOK_PROMPT.md 형식을 따르고, 근거 없는 내용은 만들지 말고,
 그래프 연결에 도움이 되도록 topics, entities, aliases, core_knowledge, detailed_knowledge, link_hints를 채워줘.
+문서에 source code, config, script, command, log, code snippet이 있으면 Source Code And Snippets 섹션도 채워줘.
 내부 프로젝트명, 시스템명, 문서명, 약어는 원문 표기로 보존해줘.
 출력은 Markdown 코드블록 하나만 줘.
 ```

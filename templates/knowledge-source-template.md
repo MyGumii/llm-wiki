@@ -1,7 +1,7 @@
 ---
 title: "<meaningful document title>"
 source_type: "lmnotebook_markdown"
-origin_type: "<pptx|docx|pdf|txt|image|unknown>"
+origin_type: "<pptx|docx|pdf|txt|image|source_code|code_snippet|config|log|unknown>"
 source_date: "<YYYY-MM-DD or unknown>"
 converted_at: "<YYYY-MM-DD or unknown>"
 domain: "<business domain or unknown>"
@@ -68,6 +68,40 @@ related_candidates:
 - 조건/예외:
 - 관련 entity:
 - 근거 위치:
+
+## Source Code And Snippets
+
+<코드가 없으면 "문서에서 명시된 코드/스니펫 없음"만 쓰고 아래 하위 섹션은 생략한다. 코드가 있으면 아래 항목을 채운다.>
+
+### Code Reference Map
+
+| Item | Language/Type | Path Or Identifier | Purpose | Source Location |
+|---|---|---|---|---|
+| <function/class/file/config/command> | <python/bash/yaml/sql/etc> | <path/name/key> | <role> | <page/slide/section> |
+
+### Important Snippets
+
+```text
+<code or command exactly as shown in the source>
+```
+
+### Code Behavior Notes
+
+- Entry point:
+- Inputs:
+- Outputs:
+- Dependencies:
+- Config keys / environment variables:
+- External systems or APIs:
+- Side effects:
+- Failure modes:
+- Operational cautions:
+
+### Code Questions
+
+- 코드만으로 확인하기 어려운 부분:
+- 실행 환경 또는 버전 확인이 필요한 부분:
+- 관련 파일 또는 문서:
 
 ## Decisions And Recommendations
 

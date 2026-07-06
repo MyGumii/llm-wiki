@@ -86,6 +86,10 @@ related_candidates:
 - 관련 entity: Mitigation Tracker
 - 근거 위치: slide 5
 
+## Source Code And Snippets
+
+문서에서 명시된 코드/스니펫 없음
+
 ## Decisions And Recommendations
 
 - 결정 사항: 다음 리뷰 전까지 미완료 항목별 owner를 지정합니다.

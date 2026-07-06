@@ -10,6 +10,7 @@ LMNotebook에서는 보통 문서를 한 개씩 올려 Markdown을 뽑습니다.
 - 기준일, 버전, 릴리스, 단계, milestone
 - 지표명, 리스크명, 요구사항명, 결정 사항명
 - "이전 기준", "후속 검토", "참조 문서", "대체 기준" 같은 관계 단서
+- source file path, function/class name, config key, command, API endpoint, log signature
 
 ## Edge types
 
